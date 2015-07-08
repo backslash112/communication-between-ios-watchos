@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="7701"/>
+    </dependencies>
+    <scenes>
+        <!--Interface Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="Communication_watch_ios_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <button width="1" alignment="left" verticalAlignment="bottom" title="Send Msg" id="0VP-TA-yLO">
+                            <connections>
+                                <action selector="sendMsgButtonClicked" destination="AgC-eL-Hgc" id="nVJ-Pg-y3w"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <color key="backgroundColor" red="0.40000000596046448" green="0.80000001192092896" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                </controller>
+            </objects>
+        </scene>
+    </scenes>
+</document>
