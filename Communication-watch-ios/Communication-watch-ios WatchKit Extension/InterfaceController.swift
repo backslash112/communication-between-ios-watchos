@@ -11,6 +11,8 @@ import Foundation
 
 
 class InterfaceController: WKInterfaceController {
+    @IBOutlet weak var label1: WKInterfaceLabel!
+    @IBOutlet weak var label2: WKInterfaceLabel!
 
     override func awakeWithContext(context: AnyObject?) {
         super.awakeWithContext(context)
@@ -30,7 +32,15 @@ class InterfaceController: WKInterfaceController {
 
     @IBAction func sendMsgButtonClicked() {
         var userInfo = ["msg": "Hi~ from watch"]
-        WKInterfaceController.openParentApplication(userInfo, reply: nil)
+        WKInterfaceController.openParentApplication(userInfo, reply: { (values:[NSObject : AnyObject]!, error: NSError!) -> Void in
+            if let returnValues = (values as? Dictionary<String, String>) {
+                let msg1 = returnValues["retVal1"]
+                let msg2 = returnValues["retVal2"]
+                self.label1.setText(msg1)
+                self.label2.setText(msg2)
+            }
+        })
+        
     }
     
 }

@@ -48,6 +48,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         } else {
             (self.window?.rootViewController as! ViewController).setLabelContent("Hi")
         }
+        let returnValues = ["retVal1": "A",
+            "retVal2": "B"]
+        reply(returnValues)
     }
 }
 

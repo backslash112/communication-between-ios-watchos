@@ -15,8 +15,14 @@
                                 <action selector="sendMsgButtonClicked" destination="AgC-eL-Hgc" id="nVJ-Pg-y3w"/>
                             </connections>
                         </button>
+                        <label width="1" alignment="left" text="Label" textAlignment="center" id="FA8-IW-o4A"/>
+                        <label width="1" alignment="left" text="Label" textAlignment="center" id="0Sb-D6-HS3"/>
                     </items>
                     <color key="backgroundColor" red="0.40000000596046448" green="0.80000001192092896" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <connections>
+                        <outlet property="label1" destination="FA8-IW-o4A" id="u8b-KK-kUG"/>
+                        <outlet property="label2" destination="0Sb-D6-HS3" id="hfc-uS-Mbr"/>
+                    </connections>
                 </controller>
             </objects>
         </scene>
